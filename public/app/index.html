@@ -10,6 +10,8 @@
   <link href="css/main.css" rel="stylesheet"/>
   <link rel="stylesheet" href="Settings/Settingss.css"/>
   <link rel="stylesheet" href="Gest-Delib/GestDelib.css"/>
+  <link rel="stylesheet" href="Gest-Stages/style.css" />
+  
 
   <title>Accueil</title>
 
@@ -39,7 +41,7 @@
             <span class="badge" title="Notification">{{eModuleNotifCount()+moduleNotifCount()}}</span></a></li>
           <li><a ui-sref="Gest-Delib.anneeScolaire"><span class="glyphicon glyphicon-ok"></span> Gestion des
             délibérations</a></li>
-          <li><a href="/stages"><span class="glyphicon glyphicon-folder-open"></span> Gestion des stages</a>
+          <li><a ui-sref="Gest-Stages"><span class="glyphicon glyphicon-folder-open"></span> Gestion des stages</a>
           </li>
 
         </ul>
@@ -79,7 +81,7 @@
 
 <script src="Settings/service.js"></script>
 <script src="Gest-Delib/service.js"></script>
-
+<script src="../routes/stages/stages.js"></script>
 <script src="Settings/controller.js"></script>
 <script src="Gest-Delib/controller.js"></script>
 

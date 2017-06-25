@@ -127,8 +127,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       }
     }).state('Gest-Stages', {
     url: '/Gest-Stages',
-    templateUrl: 'Gest-Stages/index.pug',
-    controller: 'GestStagesCtrl'
+    templateUrl: 'Gest-Stages/index.html'
+  }).state('Gest-Stages.importer',{
+    url:'/importer',
+    templateUrl:'Gest-Stages/importer.html',
+    controller: 'importCtrl'
+    }).state('Gest-Stages.trouver',{
+    url:'/trouver',
+    templateUrl:'Gest-Stages/rechercher_etudiants.html',
+    controller:'trouverCtrl'
   }).state('Settings', {
     url: '/Settings',
     templateUrl: 'Settings/Settings.html',

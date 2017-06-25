@@ -11,7 +11,7 @@ h1.filiere-annee {
   justify-content: space-between;
   align-items: center;
 }
-
+h1{}
 .logo {
   width: auto;
   height: 10rem;
@@ -26,7 +26,7 @@ h1.filiere-annee {
 
 .navigation_principale {
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .chemin_actuel {

@@ -5,7 +5,10 @@ var docxtemplater = require("docxtemplater");
 var jszip = require("jszip");
 var fs = require('fs');
 var path = require('path');
+var app     = express();
 var router = express.Router();
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
